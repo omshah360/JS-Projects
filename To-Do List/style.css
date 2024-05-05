@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: cursive;
+}
+body{
+    height: 100dvh;
+    background-image: url("Images/3d-background-dark-background-3d-render-5k-1920x1080-8844.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 4rem;
+    color: white;
+    margin: 4rem;
+}
+
+.todo-list-container{
+    /* height: 50dvh; */
+    width: 40dvw;
+    border-radius: 0.8rem;
+    background-color: rgba(101, 99, 99, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 4px 8px 2px rgba(112, 3, 163, 0.621);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.todo-list-container::-webkit-scrollbar {
+    display: none;
+}
+
+.add-task{
+    height: 10dvh;
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-box{
+    padding: 10px;
+    width: 30dvw;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    border:none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+
+#add-btn{
+    margin-left: 10px;
+    width: 4rem;
+    padding: 10px;
+    cursor: pointer;
+    border:none;
+    border-radius: 0.4rem 0.4rem 0.4rem 0;
+    color: white;
+    background-color: purple;
+}
+
+#add-btn:hover{
+    background-color: rgb(100, 4, 100);
+}
+
+
+ul{
+    height: 80%;
+    width: 80%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 1rem;
+}
+
+ul li{
+    width: 80%;
+    list-style: none;
+    padding: 12px 30px;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+
+    user-select: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: rgba(217, 4, 255, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.checked{
+    color: magenta;
+    text-decoration: line-through 2px ;
+}
+
+ul li:hover{
+    background-color: rgba(217, 4, 255, 0.2);
+
+}
+
+ul li span{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+ul li span:hover{
+    color:red;
+}
