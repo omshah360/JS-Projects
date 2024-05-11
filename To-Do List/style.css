@@ -6,7 +6,7 @@
 }
 body{
     height: 100dvh;
-    background-image: url("Images/3d-background-dark-background-3d-render-5k-1920x1080-8844.jpg");
+    background-image: url("Images/outrun-neon-dark-background-purple-1920x1080-4523.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -21,10 +21,10 @@ h1{
 }
 
 .todo-list-container{
-    /* height: 50dvh; */
-    width: 40dvw;
+    max-height: 55dvh;
+    width: 38dvw;
     border-radius: 0.8rem;
-    background-color: rgba(101, 99, 99, 0.2);
+    background-color: rgba(21, 21, 21, 0.4);
     backdrop-filter: blur(10px);
     box-shadow: 4px 4px 8px 2px rgba(112, 3, 163, 0.621);
     display: flex;
@@ -49,7 +49,7 @@ h1{
 
 #input-box{
     padding: 10px;
-    width: 30dvw;
+    width: 28dvw;
     color: rgb(255, 255, 255);
     font-size: 1rem;
     border:none;
@@ -59,7 +59,7 @@ h1{
 }
 
 #add-btn{
-    margin-left: 10px;
+    margin: 5px 0px 0px 10px;
     width: 4rem;
     padding: 10px;
     cursor: pointer;
@@ -75,7 +75,7 @@ h1{
 
 
 ul{
-    height: 80%;
+    height: auto;
     width: 80%;
     padding: 10px 20px;
     display: flex;
@@ -110,7 +110,7 @@ ul li{
 }
 
 ul li:hover{
-    background-color: rgba(217, 4, 255, 0.2);
+    background-color: rgba(217, 4, 255, 0.4);
 
 }
 
