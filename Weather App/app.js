@@ -10,7 +10,7 @@ const weatherIcon = document.querySelector("#weather-icon");
 
 const getWeatherData = async () => {
     const cityName = inputBox.value;
-    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName.toLowerCase()}&appid=${Key}&units=metric`;
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName.toLowerCase()}&appid=${Key}=metric`;
 
     let response = await fetch(URL);
 
